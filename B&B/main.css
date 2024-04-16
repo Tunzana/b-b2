@@ -1,0 +1,119 @@
+* {
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+}
+Body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 15px;
+  
+}
+
+.Header {
+  width: 100%;
+  position: relative;
+  box-shadow: black 1px 1px 10px;
+}
+.Container {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  color: #141414;
+}
+.Logo {
+  font-size: 20px;
+}
+.Header ul {
+  display: flex;
+}
+.Header ul li a {
+  padding: 8px;
+  color: black;
+  transition: color 0.5s ease;
+  transition: font-weight 0.5s ease;
+}
+.Header ul li a:hover {
+  color: rgb(223, 123, 123);
+  font-weight: bold;
+}
+.BTN a {
+    border-radius: 8px;
+    background-color: rgba(36, 35, 35, 0.467);
+    color: white;
+    font-weight: bold;
+}
+.content_container {
+    position: relative;
+  width: 100%;
+ height: calc(100vh - 44px);
+  margin: 0 auto;
+   background-image: url(365485010.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1553px 1000px;
+  background-attachment: fixed;
+  animation: change 15s infinite ease-in-out; 
+}
+.content {
+  position: absolute;
+  top:50%;
+  left: 27%;
+  transform: translate(-50%,-50%);
+}
+h1 {
+  color: white;
+  font-size: 40px;
+  text-shadow: 4px 5px 4px black;
+}
+p {
+  color: white;
+  font-size: 17px;
+  margin: 15px;
+}
+.Button a {
+    border-radius: 10px;
+    background-color: rgba(36, 35, 35, 0.885);
+    color: white;
+    font-weight: bold;
+    transition: color 0.5s ease;
+    transition: font-weight 0.5s ease;
+    padding: 10px;
+}
+.Button a:hover {
+    color: rgb(223, 123, 123);
+    font-weight: bold;
+}
+.anim1 {
+    animation: myAnim 2s ease-out 0s 1 normal forwards;
+    
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-150px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+ @keyframes change {
+  0% {
+    background-image: url(365485010.jpg);
+  }
+  50% {
+    background-image: url(365426894.jpg);
+  }
+  50% {
+    background-image: url(Premier-Hotel-EL-ICC-Exterior.webp);
+  }
+} 
